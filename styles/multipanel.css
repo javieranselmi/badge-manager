@@ -1,0 +1,15 @@
+.panel {
+  margin: 10px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  border: solid 1px black;
+}
+
+.ribbon {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+}

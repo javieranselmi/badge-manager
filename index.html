@@ -1,0 +1,32 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles/multipanel.css">
+</head>
+<body>
+
+<div class="panel" id="panel1" data-badge="15%_red_ribbon" style="background-color:tomato">
+  BUY MY T-SHIRT!
+</div>
+<div class="panel" id="panel2" data-badge="10%_yellow_ribbon" style="background-color:plum">
+  GET THE JACKET!
+</div>
+<div class="panel" id="panel3" data-badge="5%_red_ribbon" style="background-color:yellowgreen">
+  PURCHASE HEADPHONES!
+</div>
+<div class="panel" id="panel4" style="background-color:yellow">
+  THANK YOU FOR BUYING
+</div>
+	<script src="js/badge_retriever.js"></script>
+  <script src="js/config.js"></script>
+</body>
+
+<script>
+    var bm = new BadgeManager({
+      config: config,
+      badgeIdAttributeName: 'data-badge'
+    });
+    bm.init();
+</script>
